@@ -1,0 +1,508 @@
+:root {
+
+    --darkColor: #230F0F;
+    --mainColor: #313273;
+    --pColor: #4D4D4D;
+    --mainColor: #8636cc;
+    --iconColor: #086BED;
+    --navbarColor: #f3f3f3;
+    --whiteColor: #fff;
+    --borderInSection: 2px solid #DCDCE5;
+    --footerBackground: #0A0A0A;
+}
+
+body {
+
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+/* start navbar */
+
+.navbar {
+
+    background-color: var(--navbarColor);
+}
+
+.navbar .navbar-brand span {
+
+    color: var(--mainColor);
+    font-size: 25px;
+}
+
+.navbar .navbar-nav li a {
+
+    color: var(--darkColor);
+    transition: 0.3s;
+}
+
+.navbar a.contactButton {
+
+    padding: 8px 25px;
+    border-color: var(--mainColor) !important;
+    color: var(--mainColor);
+    transition: 0.6s;
+}
+
+.navbar a.contactButton:hover {
+
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--whiteColor);
+}
+
+.navbar .navbar-nav li:hover {
+
+    font-weight: bold;
+}
+/* end navbar */
+
+/* start header section */
+
+.header .headerContent .rowFirst {
+
+    margin-top: 86px;
+}
+
+.header .headerContent h2 {
+
+    font-size: 52px;
+    color: var(--darkColor);
+}
+
+.header .headerContent p {
+
+    color: #636363;
+}
+
+.header .headerContent .headerContentLast a {
+
+    padding: 16px 28px;
+    background-color: var(--mainColor);
+    border-color: transparent;
+}
+
+.header .headerContent .headerContentLast img.second {
+
+    right: 24px;
+}
+.header .headerContent .headerContentLast img.third {
+
+    right: 46px;
+}
+
+.header-circle {
+
+    z-index: 0;
+    top: 30%;
+    left: 25%;
+    width: 300px;
+    height: 300px;
+}
+
+.header1 {
+
+    z-index: 2;
+    left: 24%;
+    top: 24%;
+    width: 280px;
+}
+
+.header-center {
+
+    z-index: 1;
+    top: 34%;
+    left: 16%;
+}
+
+.header-right-top {
+
+    z-index: 3;
+    top: 16%;
+    right: 7%;
+
+}
+
+.header-left-bottom {
+
+    z-index: 3;
+    bottom: 15%;
+    left: 7%;
+}
+
+.header-right-bottom {
+
+    z-index: 4;
+    bottom: 8%;
+    right: 6%;
+}
+
+.images .header1, .header-circle, .header-center, .header-right-top, .header-right-bottom, .header-left-bottom{
+
+    transition: 0.4s all linear;
+}
+
+.images:hover .header1 {
+
+    transform: scale(1.1);
+}
+
+.images:hover .header-right-top {
+
+    transform: translateY(8px) !important;
+}
+
+.images:hover .header-right-bottom {
+
+    transform: translateX(-8px);
+}
+
+.images:hover .header-left-bottom {
+
+    transform: translateX(-8px);
+}
+
+
+
+/* end header section */
+
+
+/* partner section */
+
+.partner .h4Text {
+
+    color: var(--darkColor);
+}
+/* end partner section */
+
+
+/* start educationSection */
+
+.educationSection .first img::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+.educationSection .first h4 {
+
+    font-size: 28px;
+}
+
+.educationSection .first .firstText {
+
+    bottom: 20px;
+    left: 72px;
+}
+
+.educationSection .second h3 {
+
+    font-size: 40px;
+    line-height: 1.4;
+    color: var(--darkColor);
+}
+
+.educationSection .second p {
+
+    color: #636363;;
+
+    border-bottom: var(--borderInSection);
+}
+
+.educationSection .second a {
+
+    padding: 16px 28px;
+    background-color: var(--mainColor);
+}
+
+/* end educationSection */
+
+
+/* start courses section */
+
+.courses h3 {
+
+    font-size: 36px;
+}
+
+.courses .firstRow {
+
+    grid-template-columns: repeat(auto-fill, minmax(262px, 1fr));
+    gap: 20px;
+}
+
+
+.courses  .circle {
+
+    padding: 14px 30px;
+    border: 1px solid rgba(35, 15, 15, 0.20);
+    border-radius: 100px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.courses  .circle:hover {
+
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border: none;
+}
+
+.courses  .circle:hover a {
+
+    color: #fff !important;
+}
+
+.courses .circle.active {
+
+    background-color: var(--mainColor)
+}
+
+.courses .secondPart p {
+
+    color: #777795;
+}
+
+.courses .secondPart h4 {
+
+    color: #0A0A0A;
+    font-size: 24px;
+}
+
+.courses .secondPart .firstInCol-4 p {
+
+    color: var(--pColor);
+    width: 74px;
+    height: 33px;
+    background-color: var(--whiteColor);
+    bottom: 0;
+    left: 20px;
+    padding: 6px 15px;
+}
+
+.courses .secondPart .lastLine a {
+
+    border: 1px solid var(--pColor);
+    padding: 9px 30px;
+    color: var(--pColor) !important;
+}
+
+.courses .secondPart .lastLine p {
+
+    color: var(--pColor) !important;
+}
+
+.courses .secondPart .lastLine p del {
+
+    font-weight: 400;
+    color: #777;
+}
+
+.courses .secondPart .lastLine a {
+
+    background-color: var(--mainColor);
+    color: var(--whiteColor) !important;
+    border-color: transparent;
+}
+
+.courses .secondPart .col-4Second {
+
+    padding: 0 25px;
+    padding-bottom: 25px;
+    border: 2px solid var(--grey--5, #ECEFF4);
+    border-radius: 8px;
+}
+
+/* end courses section */
+
+
+/* start events section */
+
+.events {
+
+    background-color: var(--mainColor);
+}
+
+.events .first .textH3 {
+
+    padding-top: 76px !important;
+}
+
+.events .first .textH3 h3 {
+
+    font-size: 40px;
+}
+
+.events .second .secondImage {
+
+    bottom: 0;
+    right: 35px;
+}
+
+.events .row a {
+
+    padding: 14px 32px;
+}
+/* end events section */
+
+
+/* start graduatesWorked section */
+
+.graduatesWorked h3 {
+
+    color: #0A0A0A;
+    font-size: 32px;
+}
+/* end graduatesWorked section */
+
+
+
+/* start reviews section */
+
+.reviews .second h3 {
+
+    color: var(--darkColor);
+    font-size: 36px;
+}
+
+.reviews .second p {
+
+    color: var(--pColor);
+    font-size: 20px;
+    border-bottom: var(--borderInSection);
+}
+
+.reviews .second .secondLastLine .secondLastLine1 h4 {
+
+    color: #1C1D4E;
+}
+
+.reviews .second .secondLastLine .secondLastLine1 span {
+
+    color: #80848E;
+}
+
+.reviews .second .secondLastLine .secondLastLine2 {
+
+    width: 45px;
+    height: 45px;
+    /* rounded */
+    border: 2px solid #230F0F;
+}
+
+/* end reviews section */
+
+
+/* start firstFooter section */
+/* 
+.firstFooter .row {
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+.firstFooter .row>* {
+
+    padding-left: 0 !important;
+} */
+
+.firstFooter .second i {
+
+    font-size: 20px;
+    color: var(--iconColor);
+    cursor: pointer;
+}
+
+.firstFooter .second .aIcon {
+
+    color: var(--iconColor);
+}
+
+.firstFooter .row h4 {
+
+    color: #0A0A0A;
+}
+
+/* end firstFooter section */
+
+
+/* start secondFooter section */
+
+.secondFooter {
+
+    background-color: var(--footerBackground);
+}
+
+@media(max-width:576px) {
+
+    .header .images {
+
+        display: none;
+    }
+
+    .header .headerContent .headerContentLastImages {
+
+        display: none !important;
+    }
+
+    .events .eventsContent .second .secondImage {
+
+        display: none !important;
+    }
+
+    .header .headerContent h2 {
+
+        font-size: 42px;
+    }
+
+    .educationSection .first .firstText {
+
+        bottom: 15px;
+        left: 62px;
+    }
+
+    .events .first .textH3 h3 {
+
+        font-size: 30px;
+    }
+
+    .educationSection .row .second {
+
+        margin-top: 1.5rem;
+    }
+
+    .educationSection .second h3, .reviews .second h3 {
+
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+    .educationSection .second p, .reviews .second p {
+
+        padding-bottom: 1.5rem !important;
+        font-size: 16px !important;
+        width: 100% !important;
+        color: #636363;
+    }
+
+    .reviews .secondLastLine {
+
+        margin-top: 1rem;
+    }
+
+    .reviews .row .second {
+
+        margin-top: 1.5rem;
+    }
+}
+/* end secondFooter section */
